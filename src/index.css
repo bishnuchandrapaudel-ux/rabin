@@ -2,41 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Sophisticated fashion e-commerce design system */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Neutral base colors */
+    --background: 30 20% 98%;
+    --foreground: 25 15% 12%;
 
+    /* Card and surface colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 15% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 15% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand colors - sophisticated brown/gold palette */
+    --primary: 25 35% 18%;
+    --primary-foreground: 30 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 25 15% 95%;
+    --secondary-foreground: 25 35% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 25 10% 92%;
+    --muted-foreground: 25 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 45% 85%;
+    --accent-foreground: 25 35% 18%;
 
+    /* Fashion-forward accent colors */
+    --luxury: 35 65% 55%;
+    --luxury-foreground: 0 0% 100%;
+
+    --premium: 25 25% 25%;
+    --premium-foreground: 30 20% 98%;
+
+    /* Status colors */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --success: 142 76% 36%;
+    --success-foreground: 142 76% 96%;
 
-    --radius: 0.5rem;
+    --warning: 45 93% 47%;
+    --warning-foreground: 45 93% 97%;
+
+    /* Interactive elements */
+    --border: 25 15% 88%;
+    --input: 25 15% 88%;
+    --ring: 35 65% 55%;
+
+    /* Design tokens */
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(25 35% 18%) 0%, hsl(35 45% 25%) 100%);
+    --gradient-luxury: linear-gradient(135deg, hsl(35 65% 55%) 0%, hsl(45 55% 65%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(30 20% 98%) 0%, hsl(25 15% 95%) 100%);
+
+    /* Shadows */
+    --shadow-elegant: 0 4px 24px -4px hsl(25 35% 18% / 0.1);
+    --shadow-luxury: 0 8px 32px -8px hsl(35 65% 55% / 0.3);
+    --shadow-card: 0 2px 16px -4px hsl(25 15% 12% / 0.08);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
